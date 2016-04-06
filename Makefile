@@ -18,7 +18,7 @@ all:
 	@echo "USAGE: make [targets]"
 	@echo
 	@echo "TARGETS:"
-	@echo "    swift-install      Download and install Swift form Swift.org."
+	@echo "    swift-install      Download and install Swift from Swift.org."
 	@echo "    swiftpm-rebuild    Rebuild the Swift Package Manager itself."
 	@echo "    swiftpm-test       Test the Swift Package Manager itself after rebuilding."
 	@echo
