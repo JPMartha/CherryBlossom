@@ -1,0 +1,6 @@
+language: objective-c
+osx_image: xcode7.3
+script:
+  - make swift-install
+  - . set-swift-env
+  - make swiftpm-test
