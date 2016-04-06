@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo
+echo "Before the change:"
+xcrun --find swift
+swift --version
+echo
+export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
+echo "PATH=$PATH"
+export TOOLCHAINS=swift
+echo "TOOLCHAINS=$TOOLCHAINS"
+echo
+echo "After the change:"
+xcrun --find swift
+swift --version
+echo
