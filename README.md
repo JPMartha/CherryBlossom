@@ -1,4 +1,4 @@
-# CherryBlossom
+# CherryBlossom [![Build Status](https://travis-ci.org/JPMartha/CherryBlossom.svg?branch=master)](https://travis-ci.org/JPMartha/CherryBlossom)
 
 **CherryBlossom** is _**UNOFFICIAL**_ development utilities for Swift.
 
