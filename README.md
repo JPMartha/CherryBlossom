@@ -20,15 +20,13 @@
 
 ## Getting Started
 
-The first step to use **CherryBlossom** is to set the `TOOLCHAIN_VERSION` and the `SWIFTPM_DEVELOPMENT_DIRECTORY` variables in the `Makefile`.
+The first step to use **CherryBlossom** is to set the `TOOLCHAIN_VERSION`  variables in the `Makefile`.
 
-- `TOOLCHAIN_VERSION`
+(e.g. `swift-DEVELOPMENT-SNAPSHOT-2016-03-24-a`)
+  
+If you try to develop the Swift Package Manager, set the `SWIFTPM_DEVELOPMENT_DIRECTORY` in the `Makefile`.
 
-  (e.g. `swift-DEVELOPMENT-SNAPSHOT-2016-03-24-a`)
-
-- `SWIFTPM_DEVELOPMENT_DIRECTORY`
-
-  (e.g. `$(HOME)/swift-package-manager`)
+(e.g. `$(HOME)/swift-package-manager`)
 
 <br />
 
