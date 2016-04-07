@@ -15,7 +15,7 @@ all:
 	@echo
 	@echo "OVERVIEW: Unofficial development utilities for Swift"
 	@echo
-	@echo "USAGE: make [targets] [options<value>]"
+	@echo "USAGE: make [targets] [options <value>]"
 	@echo
 	@echo "TARGETS:"
 	@echo "    swift-install      Download and install Swift from Swift.org."
