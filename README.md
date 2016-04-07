@@ -53,6 +53,8 @@ For more information, see the [Download Swift](https://swift.org/download/#snaps
 
 ### Managing Swift Environments
 
+Set your `PATH` and `TOOLCHAINS` environment variables.
+
 ```bash
 $ cd <your-cherryblossom-directory>
 $ . set-swift-env
@@ -76,7 +78,7 @@ $ make swiftpm-rebuild
 
 > _**⚠️ PLEASE NOTE!**_
 >
-> _**OVERRIDE the `swift-build` and the `swift-test` in the `SWIFTPM_EXECUTIVE_DIRECTORY` which you set in the `Makefile`.**_
+> _**OVERRIDE your `swift-build` and your `swift-test` in the `SWIFTPM_EXECUTIVE_DIRECTORY` which you set in the `Makefile`.**_
 
 If you want to revert, run `$ make swift-install` again. 💁
 
