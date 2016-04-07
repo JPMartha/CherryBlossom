@@ -2,8 +2,13 @@
 
 **CherryBlossom** is _**UNOFFICIAL**_ development utilities for Swift.
 
+### For Swift 3.0
+
 - Installing Development Snapshot
 - Managing Swift Environments
+
+### For the Swift Package Manager
+
 - Rebuilding The Swift Package Manager
 - Testing The Swift Package Manager
 
@@ -18,6 +23,8 @@
 <img src="./Documentation/Images/CherryBlossom.png">
 <img src="./Documentation/Images/set-swift-env.png">
 
+<br />
+
 ## Getting Started
 
 The first step to use **CherryBlossom** is to set the `TOOLCHAIN_VERSION`  variables in the `Makefile`.
@@ -29,6 +36,8 @@ If you try to develop the Swift Package Manager, set the `SWIFTPM_DEVELOPMENT_DI
 (e.g. `$(HOME)/swift-package-manager`)
 
 <br />
+
+## For Swift 3.0
 
 ### Installing Development Snapshot
 
@@ -53,6 +62,8 @@ For more information, see [https://github.com/apple/swift-package-manager/](http
 
 <br />
 
+## For the Swift Package Manager
+
 ### Rebuilding The Swift Package Manager
 
 Rebuild the Swift Package Manager itself with the bootstrap script.
@@ -66,6 +77,8 @@ $ make swiftpm-rebuild
 > _**⚠️ PLEASE NOTE!**_
 >
 > _**OVERRIDE the `swift-build` and the `swift-test` in the `SWIFTPM_EXECUTIVE_DIRECTORY` which you set in the `Makefile`.**_
+
+If you want to revert, run `$ make swift-install` again. 💁
 
 <br />
 
@@ -93,7 +106,7 @@ For more information, see [https://github.com/apple/swift-package-manager/](http
 
 ## Options
 
-If the current directory is not your CherryBlossom directory, set it with `-C` option.
+If your current directory is not the CherryBlossom directory, set it with `-C` option.
 
 Change to the directory before doing anything.
 
