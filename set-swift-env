@@ -5,10 +5,22 @@ echo "Before the change:"
 xcrun --find swift
 swift --version
 echo
-export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
-echo "PATH=$PATH"
-export TOOLCHAINS=swift
-echo "TOOLCHAINS=$TOOLCHAINS"
+if [[ $PATH =~ :/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:* ]]
+then
+	echo
+	echo "You have already set the PATH."
+else
+	export PATH=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH
+	echo "PATH=$PATH"
+fi
+if [ $TOOLCHAINS = swift ]
+then
+	echo
+	echo "You have already set the TOOLCHAINS."
+else
+	export TOOLCHAINS=swift
+	echo "TOOLCHAINS=$TOOLCHAINS"
+fi
 echo
 echo "After the change:"
 xcrun --find swift
