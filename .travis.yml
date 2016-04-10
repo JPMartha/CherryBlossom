@@ -3,3 +3,5 @@ osx_image: xcode7.3
 script:
   - make swift-install
   - . set-swift-env
+  - if [[ $(env | grep -w PATH) =~ /Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:* ]]; then exit 0; else exit 1; fi
+  - if [[ $(env | grep -w TOOLCHAINS) != swift ]]; then exit 1; fi
