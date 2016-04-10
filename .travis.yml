@@ -4,4 +4,4 @@ script:
   - make swift-install
   - . set-swift-env
   - $(env | grep -w PATH) =~ /Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:*
-  - $(env | grep -w TOOLCHAINS) = swift
+  - $(env | grep -w TOOLCHAINS) == swift
