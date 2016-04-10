@@ -28,8 +28,10 @@ all:
 	@echo
 
 swift-install:
-	curl -O https://swift.org/builds/development/xcode/$(TOOLCHAIN_VERSION)/$(TOOLCHAIN_VERSION)-osx.pkg
+	set -e
+	curl -fO\# https://swift.org/builds/development/xcode/$(TOOLCHAIN_VERSION)/$(TOOLCHAIN_VERSION)-osx.pkg
 	sudo installer -pkg $(TOOLCHAIN_VERSION)-osx.pkg -target /
+	rm $(TOOLCHAIN_VERSION)-osx.pkg
 
 swiftpm-rebuild: swiftpm-clean
 	@echo
