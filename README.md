@@ -57,7 +57,7 @@ Set your `PATH` and `TOOLCHAINS` environment variables.
 
 ```bash
 $ cd <your-cherryblossom-directory>
-$ . set-swift-env
+$ . scripts/set-swift-env
 ```
 
 For more information, see [https://github.com/apple/swift-package-manager/](https://github.com/apple/swift-package-manager/tree/swift-DEVELOPMENT-SNAPSHOT-2016-03-24-a#managing-swift-environments).
