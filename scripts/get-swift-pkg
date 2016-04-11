@@ -8,7 +8,7 @@ echo
 if [ -z "$1" ]; then
 	echo "OVERVIEW: Download and install Swift Development Snapshots from Swift.org."
 	echo
-        echo "USAGE:    get-swift-pkg [DevelopmentSnapshotsName]"
+        echo "USAGE:    get-swift-pkg [development-snapshots-name]"
         echo
         echo "Example:  get-swift-pkg 2016-03-24-a"
         echo
