@@ -27,7 +27,7 @@
 
 ## Getting Started
 
-The first step to use **CherryBlossom** is to set the `TOOLCHAIN_VERSION`  variables in the `Makefile`.
+The first step to use **CherryBlossom** is to set the `TOOLCHAIN_VERSION` in the `Makefile`.
 
 - e.g. `2016-03-24-a`
   

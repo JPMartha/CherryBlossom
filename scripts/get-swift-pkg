@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 DEVELOPMENT_SNAPSHOTS_PATH=https://swift.org/builds/development/xcode
 DEVELOPMENT_SNAPSHOTS_PREFIX=swift-DEVELOPMENT-SNAPSHOT-
