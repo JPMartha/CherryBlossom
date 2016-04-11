@@ -1,0 +1,24 @@
+#!/bin/bash
+
+DEVELOPMENT_SNAPSHOTS_PATH=https://swift.org/builds/development/xcode
+DEVELOPMENT_SNAPSHOTS_PREFIX=swift-DEVELOPMENT-SNAPSHOT-
+
+echo
+
+if [ -z "$1" ]; then
+	echo "OVERVIEW: Download and install Swift Development Snapshots from Swift.org."
+	echo
+        echo "USAGE:    get-swift-pkg [DevelopmentSnapshotsName]"
+        echo
+        echo "Example:  get-swift-pkg 2016-03-24-a"
+        echo
+        exit 1
+fi
+
+DEVELOPMENT_SNAPSHOTS_NAME=$DEVELOPMENT_SNAPSHOTS_PREFIX"$1"
+
+curl -O\# $DEVELOPMENT_SNAPSHOTS_PATH/$DEVELOPMENT_SNAPSHOTS_NAME/$DEVELOPMENT_SNAPSHOTS_NAME-osx.pkg
+sudo installer -pkg $DEVELOPMENT_SNAPSHOTS_NAME-osx.pkg -target /
+rm $DEVELOPMENT_SNAPSHOTS_NAME-osx.pkg
+
+echo

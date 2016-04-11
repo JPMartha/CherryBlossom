@@ -1,4 +1,4 @@
-TOOLCHAIN_VERSION=swift-DEVELOPMENT-SNAPSHOT-2016-03-24-a
+TOOLCHAIN_VERSION=2016-03-24-a
 
 SWIFTPM_DEVELOPMENT_DIRECTORY=$(HOME)/swift-package-manager
 SWIFTPM_EXECUTIVE_DIRECTORY=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin
@@ -28,9 +28,7 @@ all:
 	@echo
 
 swift-install:
-	curl -O\# https://swift.org/builds/development/xcode/$(TOOLCHAIN_VERSION)/$(TOOLCHAIN_VERSION)-osx.pkg
-	sudo installer -pkg $(TOOLCHAIN_VERSION)-osx.pkg -target /
-	rm $(TOOLCHAIN_VERSION)-osx.pkg
+	scripts/get-swift-pkg $(TOOLCHAIN_VERSION)
 
 swiftpm-rebuild: swiftpm-clean
 	@echo
