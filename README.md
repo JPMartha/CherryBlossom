@@ -29,11 +29,11 @@
 
 The first step to use **CherryBlossom** is to set the `TOOLCHAIN_VERSION`  variables in the `Makefile`.
 
-(e.g. `swift-DEVELOPMENT-SNAPSHOT-2016-03-24-a`)
+- e.g. `2016-03-24-a`
   
 If you try to develop the Swift Package Manager, set the `SWIFTPM_DEVELOPMENT_DIRECTORY` in the `Makefile`.
 
-(e.g. `$(HOME)/swift-package-manager`)
+- e.g. `$(HOME)/swift-package-manager`
 
 <br />
 
