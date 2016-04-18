@@ -22,6 +22,14 @@ else
 	echo "TOOLCHAINS="$TOOLCHAINS
 fi
 
+if [[ $SWIFT_EXEC = swift ]]
+then
+	echo "You have already set the SWIFT_EXEC."
+else
+	export SWIFT_EXEC=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin/swiftc
+	echo "SWIFT_EXEC="$SWIFT_EXEC
+fi
+
 echo
 echo "After the change:"
 xcrun --find swift
