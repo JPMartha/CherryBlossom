@@ -1,6 +1,6 @@
 TOOLCHAIN_VERSION=2016-04-12-a
 
-SWIFTPM_DEVELOPMENT_DIRECTORY=$(HOME)/swift-package-manager
+SWIFTPM_DEVELOPMENT_DIRECTORY=$(HOME)/swiftpm
 SWIFTPM_EXECUTIVE_DIRECTORY=/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin
 
 UTILITIES_BOOTSTRAP=Utilities/bootstrap
@@ -49,4 +49,4 @@ swiftpm-clean:
 swiftpm-test: swiftpm-rebuild
 	@echo
 	@echo "Testing..."
-	$(SWIFTPM_DEVELOPMENT_DIRECTORY)/$(UTILITIES_BOOTSTRAP) test
+	$(SWIFTPM_DEVELOPMENT_DIRECTORY)/$(UTILITIES_BOOTSTRAP) --swiftc $(SWIFTPM_EXECUTIVE_DIRECTORY)/swiftc --sbt $(SWIFTPM_EXECUTIVE_DIRECTORY)/$(SWIFT_BUILD_TOOL) test
